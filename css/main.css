@@ -184,7 +184,7 @@ html {
 
 .chapter {
     margin: 0 auto 0;
-    width: 50%;
+    width: 70%;
 }
 
 .chapter-title {
@@ -211,8 +211,11 @@ html {
         height: 40px;
         width: 40px;
     }
-    .return {
-        background-size: 20px 40px;
+    .return, .return:hover {
+        background-size: 20px 20px;
+    }
+    .back:hover, .next:hover {
+        background-size: 40px 40px;
     }
 
 }
