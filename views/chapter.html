@@ -1,7 +1,7 @@
 <a class="button return" href="#/books">Back</a>
 
 <a class="button back" ng-if="previousChapterIndex !== null"
-  href="#/books/{{ currentBookIndex }}/chapters/{{ previousChapterIndex }}">Voltar</a>
+  href="#/books/{{ currentBookIndex }}/chapters/{{ previousChapterIndex }}" ng-click="scrollToTop()">Voltar</a>
 <div class="chapter">
   <p><span class="title"> {{ book.title }} </span> <span class="author"> {{ book.author }} </span></p>
   <h2 class="chapter-title"> {{ chapter.title }} </h2>
@@ -9,6 +9,6 @@
   <p>{{ chapter.paragraphs }}</p>
 
   <a class="button next" ng-if="nextChapterIndex !== null"
-    href="#/books/{{ currentBookIndex }}/chapters/{{ nextChapterIndex }}">Next</a>
+  href="#/books/{{ currentBookIndex }}/chapters/{{ nextChapterIndex }}" ng-click="scrollToTop()">Next</a>
 
 </div>

@@ -1,8 +1,8 @@
 app.controller("ChapterController", [
   "$scope",
   "books",
-  "$routeParams",
-  function ($scope, books, $routeParams) {
+  "$routeParams", '$window',
+  function ($scope, books, $routeParams, $window) {
     books.success(function (data) {
 
       $scope.currentBookIndex = parseInt($routeParams.bookId);
@@ -23,6 +23,12 @@ app.controller("ChapterController", [
     });
 
     $scope.currentChapterIndex = parseInt($routeParams.chapterId);
+
+    // Scroll para o top dá pagina
+    $scope.scrollToTop = function() {
+      
+      $window.scrollTo(0, 0);
+  };
 
   },
 ]);
