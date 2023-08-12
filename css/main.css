@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     font-family: Georgia, serif;
     margin: 0;
     padding: 0;
@@ -6,7 +7,8 @@ body, html {
 
 .header {
     font-size: 48px;
-    padding: 40px 0;
+    padding-top: 30px;
+    padding-bottom: 0px;
     text-align: center;
 }
 
@@ -20,34 +22,49 @@ body, html {
 }
 
 .bookshelf {
-    background: rgb(255,255,255); /* Old browsers */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+    /* W3C */
 }
 
 .book {
-    background: rgb(255,255,255); /* Old browsers */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+    /* W3C */
     height: 400px;
     position: relative;
 }
 
 .book:hover {
-    background: rgb(255,255,255); /* Old browsers */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,81,84,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,81,84,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,81,84,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,81,84,1) 100%); /* W3C */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 81, 84, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 81, 84, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 81, 84, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 81, 84, 1) 100%);
+    /* W3C */
 }
 
 .bookshelf img {
     bottom: 0;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
     left: 50%;
     margin-left: -80px;
     position: absolute;
@@ -63,7 +80,9 @@ body, html {
     text-decoration: none;
 }
 
-.book h3, .book-detail h3, .chapter .title {
+.book h3,
+.book-detail h3,
+.chapter .title {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     margin: 0;
@@ -81,10 +100,11 @@ body, html {
 }
 
 .book-detail img {
-    width: 240px;   
+    width: 240px;
 }
-  
-.book-detail h3, .chapter .title {
+
+.book-detail h3,
+.chapter .title {
     padding: 20px 0;
 }
 
@@ -110,7 +130,9 @@ body, html {
     text-decoration: none;
 }
 
-.back, .next {
+.back,
+.next,
+.return {
     background: url('back.svg') center center #ff2c4b;
     background-size: 80px 80px;
     border-radius: 100%;
@@ -127,8 +149,18 @@ body, html {
     background: url('next.svg') center center #ff2c4b;
     background-size: 80px 80px;
     left: auto;
-    right: 20px;   
+    right: 20px;
 }
+
+.return {
+    background: url('return.svg') center center #f18383;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50px 80px;
+    margin-top: -330px;
+    right: 20px;
+}
+
 
 .back:hover {
     background: url('back.svg') center center #cc2344;
@@ -140,9 +172,17 @@ body, html {
     background-size: 80px 80px;
 }
 
+.return:hover {
+    background: url('return.svg') center center #ed4646;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50px 80px;
+
+}
+
 .chapter {
     margin: 0 auto 0;
-    width: 50%;   
+    width: 50%;
 }
 
 .chapter-title {
@@ -158,13 +198,32 @@ body, html {
 }
 
 .author {
-    font-style: italic;   
+    font-style: italic;
 }
 
 @media (max-width: 1170px) {
-  .back, .next {
-    background-size: 40px 40px;
-    height: 40px;
-    width: 40px;
-  }    
+
+    .back,
+    .next {
+        background-size: 40px 40px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

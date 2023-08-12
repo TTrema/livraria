@@ -4,7 +4,7 @@ app.controller("ChapterController", [
   "$routeParams",
   function ($scope, books, $routeParams) {
     books.success(function (data) {
-      // Your code here
+
       $scope.currentBookIndex = parseInt($routeParams.bookId);
       $scope.book = data[$scope.currentBookIndex];
 
@@ -12,15 +12,17 @@ app.controller("ChapterController", [
 
       $scope.chapter = $scope.chapters[$scope.currentChapterIndex];
 
-      // If there no more chapters left, go back to the bookshelf view
-      if ($routeParams.chapterId >= $scope.book.chapters.length - 1) {
-        $scope.nextChapterIndex = "#";
-      }
+      // Limita o index dos capítulos e seta como null se não tiver mais.
+      $scope.nextChapterIndex = $routeParams.chapterId >= $scope.book.chapters.length - 1 ?
+        null :
+        parseInt($routeParams.chapterId) + 1;
+
+      $scope.previousChapterIndex = $routeParams.chapterId <= 0 ?
+        null :
+        parseInt($routeParams.chapterId) - 1;
     });
 
-    // Using these properties to create the URLs in line 1 and line 11 of view/chapter.html
-    $scope.currentBookIndex = parseInt($routeParams.bookId);
     $scope.currentChapterIndex = parseInt($routeParams.chapterId);
-    $scope.nextChapterIndex = $scope.currentChapterIndex + 1;
+
   },
 ]);
