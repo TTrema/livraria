@@ -154,11 +154,13 @@ html {
 
 .return {
     background: url('return.svg') center center #f18383;
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 50px 80px;
-    margin-top: -330px;
-    right: 20px;
+    top: 50px;
+    left: 20px;
+    position: fixed;
+    text-indent: -9999px;
+    z-index: 1000; /* Ensure the button stays above other content */
 }
 
 
@@ -204,11 +206,15 @@ html {
 @media (max-width: 1170px) {
 
     .back,
-    .next {
+    .next, .return {
         background-size: 40px 40px;
         height: 40px;
         width: 40px;
     }
+    .return {
+        background-size: 20px 40px;
+    }
+
 }
 
 .search-container {
