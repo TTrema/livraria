@@ -1,4 +1,4 @@
-﻿# Site de notícias feito com AngularJS
+﻿# Site de leitura de livros feito com AngularJS
 
 
 ## Demonstração:
